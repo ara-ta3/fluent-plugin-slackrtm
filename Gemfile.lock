@@ -1,0 +1,14 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    slack-rtmapi (1.0.0.rc4)
+      websocket-driver
+    websocket-driver (0.5.4)
+      websocket-extensions (>= 0.1.0)
+    websocket-extensions (0.1.2)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  slack-rtmapi
