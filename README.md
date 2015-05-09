@@ -4,7 +4,25 @@ This is a plugin for [Fluentd](http://fluentd.org)
 
 ## Component
 
+### SlackRTM Input
+
+Fluent Plugin for the [Real Time Messaging Slack API](https://api.slack.com/rtm).  
+
+
 ## Configuration
+
+### Required Params
+
+* token
+
+**Sample Configuration**
+
+```
+<source>
+type slackrtm
+token xxxx-yy....
+</source>
+```
 
 ## Copyright
 
