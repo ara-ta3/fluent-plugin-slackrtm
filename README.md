@@ -1,5 +1,4 @@
 # fluent-plugin-slackrtm
-=====
 
 This is a plugin for [Fluentd](http://fluentd.org)
 
