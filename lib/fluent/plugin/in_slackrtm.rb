@@ -11,7 +11,7 @@ module Fluent
     def start
       super
       @messages_thread = Thread.new do
-        url = SlackRTM.get_url token: @token
+        url = SlackRTM.get_url token: token
         client = SlackRTM::Client.new websocket_url: url
         client.on(:message) do |data|
           emit(data)
@@ -27,7 +27,7 @@ module Fluent
 
     def emit(data)
       time = Time.now.to_i
-      Fluent::Engine.emit(@tag, time, data)
+      Fluent::Engine.emit(tag, time, data)
     end
 
   end
