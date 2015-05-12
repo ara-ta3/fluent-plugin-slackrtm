@@ -18,6 +18,7 @@ Gem::Specification.new do |gem|
 
   gem.add_dependency "fluentd", [">= 0.10.49", "< 2"]
   gem.add_dependency "slack-rtmapi"
+  gem.add_dependency "fluent-mixin-config-placeholders", ">= 0.3.0"
   gem.add_development_dependency "rake", ">= 0.9.2"
   gem.add_development_dependency "test-unit", ">= 3.0.8"
 end

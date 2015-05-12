@@ -1,6 +1,6 @@
 require 'helper'
 
-class RSSInputTest < Test::Unit::TestCase
+class SlackRTMInputTest < Test::Unit::TestCase
   def setup
     Fluent::Test.setup
   end
@@ -9,11 +9,14 @@ class RSSInputTest < Test::Unit::TestCase
     Fluent::Test::InputTestDriver.new(Fluent::SlackRTMInput).configure(conf)
   end
 
+  CONFIG_SUCCESS = %[
+    type slackrtm
+    tag test
+    token hogefuga
+  ]
+
   def test_configure_success
-    d = create_driver %q{
-      tag test
-      token hogefuga
-    }
+    d = create_driver(CONFIG_SUCCESS)
 
     assert_equal 'test', d.instance.tag
     assert_equal 'hogefuga', d.instance.token
