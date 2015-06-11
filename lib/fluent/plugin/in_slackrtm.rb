@@ -6,7 +6,7 @@ module Fluent
     Fluent::Plugin.register_input('slackrtm', self)
 
     config_param :tag, :string
-    config_param :token, :string
+    config_param :token, :string, :secret => true
 
     def start
       super
