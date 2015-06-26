@@ -4,8 +4,6 @@ module Fluent
   class SlackExcludeFilter < Fluent::Filter
     Fluent::Plugin.register_filter('slack_exclude', self)
 
-    SUBTYPE_BOT = 'bot_message'
-
     config_param :channels, :default => [] do |val|
       val.split(',').map {|v| v.strip }
     end
@@ -26,7 +24,7 @@ module Fluent
         r = nil
       end
 
-      if( exclude_bot && record['subtype'] == SUBTYPE_BOT )
+      if( exclude_bot && record['subtype'] == :bot_message )
         r = nil
       end
       r
