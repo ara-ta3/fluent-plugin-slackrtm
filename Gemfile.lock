@@ -1,10 +1,10 @@
 PATH
   remote: .
   specs:
-    fluent-plugin-slackrtm (0.0.1)
+    fluent-plugin-slackrtm (0.2.4)
       fluent-mixin-config-placeholders (>= 0.3.0)
       fluentd (>= 0.10.49, < 2)
-      slack-rtmapi
+      slack-rtmapi (= 1.0.0.rc4)
 
 GEM
   remote: https://rubygems.org/
@@ -13,7 +13,7 @@ GEM
     fluent-mixin-config-placeholders (0.3.0)
       fluentd
       uuidtools (>= 2.1.5)
-    fluentd (0.12.8)
+    fluentd (0.12.11)
       cool.io (>= 1.2.2, < 2.0.0)
       http_parser.rb (>= 0.5.1, < 0.7.0)
       json (>= 1.4.3)
@@ -24,7 +24,7 @@ GEM
       tzinfo-data (>= 1.0.0)
       yajl-ruby (~> 1.0)
     http_parser.rb (0.6.0)
-    json (1.8.2)
+    json (1.8.1)
     msgpack (0.5.11)
     power_assert (0.2.2)
     rake (10.4.2)
@@ -37,7 +37,7 @@ GEM
     thread_safe (0.3.5)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
-    tzinfo-data (1.2015.4)
+    tzinfo-data (1.2015.2)
       tzinfo (>= 1.0.0)
     uuidtools (2.1.5)
     websocket-driver (0.5.4)

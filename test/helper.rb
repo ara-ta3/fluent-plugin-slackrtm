@@ -13,6 +13,7 @@ $LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))
 $LOAD_PATH.unshift(File.dirname(__FILE__))
 require 'fluent/test'
 require 'fluent/plugin/in_slackrtm'
+require 'fluent/plugin/slack/event'
 
 class Test::Unit::TestCase
 end
